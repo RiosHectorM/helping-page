@@ -14,12 +14,12 @@ const RandomNumber: React.FC = () => {
       const random = Math.floor(Math.random() * 500) + 1;
       setRandomNumber(random);
       setLoading(false);
-    }, 2000);
+    }, 1000);
   };
 
   return (
     <div className="flex flex-col text-center shadow-2xl shadow-black drop-shadow-2xl p-8 border border-black rounded-2xl h-80 justify-between mt-8">
-      <h1 className="text-2xl font-bold mb-4">Número Aleatorio</h1>
+      <h1 className="text-3xl font-bold mb-4">Número Aleatorio</h1>
 
       {loading ? (
         <div className="flex w-full justify-center ">

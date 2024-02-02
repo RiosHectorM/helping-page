@@ -14,7 +14,7 @@ const UserTable: React.FC = () => {
   const randomData = generateRandomData();
 
   return (
-    <div className=''>
+    <div className="flex flex-col justify-center items-center">
       <h1 className="font-extrabold text-3xl">Ultimos Numeros comprados</h1>
       <table className="border-collapse border border-gray-400">
         <thead>

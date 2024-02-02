@@ -3,7 +3,7 @@ import React from 'react';
 
 const Message = () => {
   return (
-    <div className="relative flex flex-col md:flex-row bg-gradient-to-r from-red-500 to-red-900  md:p-4 p-24 rounded-lg shadow-2xl shadow-black drop-shadow-2xl md:w-2/3 w-full">
+    <div className="relative flex flex-col md:flex-row bg-gradient-to-r from-red-500 to-red-900  md:p-4 p-24 rounded-lg shadow-2xl shadow-black drop-shadow-2xl md:w-2/3 w-full mt-10">
       <div className="md:w-1/2 relative z-10">
         <h1 className="text-4xl font-bold text-white mb-4">BIENVENIDOS</h1>
         <p className="text-lg text-white">
