@@ -14,20 +14,22 @@ const UserTable: React.FC = () => {
   const randomData = generateRandomData();
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1 className="font-extrabold text-3xl">Ultimos Numeros comprados</h1>
-      <table className="border-collapse border border-gray-400">
+    <div className="flex flex-col justify-center items-center glass px-4 shadow-2xl shadow-secondary rounded-2xl">
+      <h1 className="font-extrabold text-3xl mb-2">
+        Últimos Números comprados
+      </h1>
+      <table className="table text-center">
         <thead>
-          <tr>
-            <th className="border border-gray-400 p-2">Nombre</th>
-            <th className="border border-gray-400 p-2">Número</th>
+          <tr className="bg-base-200 ">
+            <th className="text-xl">Nombre</th>
+            <th className="text-xl">Número</th>
           </tr>
         </thead>
         <tbody>
           {randomData.map((row, index) => (
             <tr key={index}>
-              <td className="border border-gray-400 p-2">{row.name}</td>
-              <td className="border border-gray-400 p-2">{row.number}</td>
+              <td>{row.name}</td>
+              <td>{row.number}</td>
             </tr>
           ))}
         </tbody>

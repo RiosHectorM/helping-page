@@ -18,15 +18,13 @@ const NumberGrid: React.FC = () => {
   const numbers = generateNumbers();
 
   return (
-    <div className="flex flex-col shadow-2xl shadow-black drop-shadow-2xl border border-black rounded-2xl my-8 justify-center text-center">
-      <h1 className="font-extrabold text-3xl">
-        Elegi el número que más te guste
-      </h1>
+    <div className="flex flex-col shadow-2xl shadow-secondary border border-secondary rounded-2xl my-8 justify-center text-center">
+      <h1 className="font-extrabold text-3xl pt-2">Numeros disponibles</h1>
       <div className="p-4 flex w-full flex-wrap gap-2 justify-center text-center">
         {numbers.map((number, index) => (
           <div
             key={index}
-            className="bg-gray-200 p-2 text-center rounded cursor-pointer flex w-12 h-10 justify-center items-center align-middle font-bold hover:bg-red-200 hover:cursor-pointer"
+            className="btn btn-secondary text-center flex justify-center items-center align-middle font-bold w-12 h-10"
             onClick={() => clickNumber(number)}
           >
             {number}

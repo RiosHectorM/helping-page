@@ -18,7 +18,7 @@ const RandomNumber: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col text-center shadow-2xl shadow-black drop-shadow-2xl p-8 border border-black rounded-2xl h-80 justify-between mt-8">
+    <div className="flex flex-col text-center shadow-2xl shadow-secondary p-8 border border-black rounded-2xl h-80 justify-between mt-8 glass">
       <h1 className="text-3xl font-bold mb-4">Número Aleatorio</h1>
 
       {loading ? (
@@ -32,16 +32,14 @@ const RandomNumber: React.FC = () => {
           />
         </div>
       ) : (
-        <p className="text-8xl font-bold mb-4">
+        <p className="text-8xl font-bold mb-4 text-secondary">
           {randomNumber !== null ? randomNumber : '???'}
         </p>
       )}
 
       <button
         onClick={generateRandomNumber}
-        className={`mt-2 bg-red-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30 border border-gray-100 p-2 sm:p-4 text-black font-bold transition-all duration-500 hover:bg-black hover:text-white flex w-full justify-center rounded-xl ${
-          loading ? 'cursor-not-allowed' : ''
-        }`}
+        className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-secondary glass text-white"
         disabled={loading}
       >
         {loading ? 'GENERANDO...' : 'GENERAR NUMERO'}
