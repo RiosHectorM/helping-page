@@ -1,10 +1,8 @@
 import React from 'react';
-import PremiosList from '../shared/PremiosList';
+import PremiosList from './PremiosList';
 
 const MenuPremios = () => {
-  return (
-    <PremiosList />
-  );
+  return <PremiosList />;
 };
 
 export default MenuPremios;

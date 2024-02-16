@@ -20,7 +20,7 @@ const UserTable: React.FC = () => {
       </h1>
       <table className="table text-center">
         <thead>
-          <tr className="bg-base-200 ">
+          <tr className="bg-base-200">
             <th className="text-xl">Nombre</th>
             <th className="text-xl">Número</th>
           </tr>
