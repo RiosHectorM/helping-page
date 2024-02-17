@@ -29,6 +29,12 @@ const Navbar = () => {
         >
           CONTACTO
         </Link>
+        <Link
+          href="/adminPanel"
+          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-secondary glass text-white"
+        >
+          ADMIN
+        </Link>
       </div>
     </div>
   );
