@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <Message />
       <div className="divider divider-secondary py-8">ELEGI UN NUMERO</div>
-      <div className="flex w-3/4 justify-around flex-col md:flex-row">
+      <div className="flex w-3/4 justify-center md:justify-around flex-col md:flex-row items-center">
         <NextGame />
         <RandomNumber />
       </div>
